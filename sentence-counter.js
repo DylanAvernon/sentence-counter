@@ -14,7 +14,6 @@ let sentenceCounterStructure = {
             let content = inputContainer.textContent;
             let count = 0;
             content = content.split(/\s/);
-            console.log(content);
             content.forEach((word) => {
                 if (word.length > 1 && word[word.length-1] === '!' || word[word.length-1] === '?'|| word[word.length-1] === '.') {
                     count += 1;
